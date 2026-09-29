@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #080a12;
+    color: #e21fc2;
+}
+
+.portadaguia {
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            rgba(8, 10, 18, 0.55),
+            rgba(8, 10, 18, 0.88)
+        ),
+        url("../IMG/meloetta.jpeg") center center / cover no-repeat;
+}
+
+.capaportada {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 10, 18, 0.95),
+            transparent 50%,
+            rgba(8, 10, 18, 0.95)
+        );
+}
+
+.contenidoportada {
+    width: 100%;
+    max-width: 1100px;
+    padding: 80px 30px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.botonvolver {
+    display: inline-block;
+    margin-bottom: 45px;
+    color: #858ca0;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.botonvolver:hover {
+    color: #ffcc33;
+    transform: translateX(-5px);
+}
+
+.insigniaportada {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 204, 51, 0.3);
+    background: rgba(255, 204, 51, 0.06);
+    color: #ffcc33;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.portadaguia h1 {
+    font-size: clamp(70px, 13vw, 150px);
+    line-height: 0.85;
+    font-weight: 900;
+    letter-spacing: -7px;
+    color: #ffffff;
+    text-shadow:
+        0 10px 50px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(230, 57, 70, 0.2);
+}
+
+.subtituloportada {
+    margin-top: 25px;
+    color: #a0a6b7;
+    font-size: 15px;
+}
+
+.tiposportada {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.tiposportada span {
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.tiponormal {
+    background: rgba(230, 57, 70, 0.15);
+    border: 1px solid rgba(230, 57, 70, 0.4);
+    color: #f0d0e5;
+}
+
+.tipopsiquico {
+    background: rgba(160, 170, 190, 0.12);
+    border: 1px solid rgba(160, 170, 190, 0.3);
+    color: #dd23c4;
+}
+
+.decoracionportada {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    bottom: -600px;
+    transform: translateX(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+}
+
+main {
+    background:
+        linear-gradient(
+            180deg,
+            #080a12,
+            #0c0f1b
+        );
+}
+
+.introduccion,
+.equipos,
+.estrategia {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.tituloseccion span,
+.encabezadoseccion > div > span {
+    color: #dfafd3;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.tituloseccion h2,
+.encabezadoseccion h2 {
+    margin-top: 12px;
+    font-size: clamp(35px, 5vw, 52px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.tituloseccion strong,
+.encabezadoseccion strong {
+    color: #ffcc33;
+}
+
+.introduccion {
+    border-bottom: 1px solid #1b2030;
+}
+
+.textointroduccion {
+    max-width: 700px;
+    margin-top: 30px;
+    color: #737b90;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.encabezadoseccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.numeroseccion {
+    color: #41485b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.rejillaequipos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.tarjetaequipo {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 280px;
+    overflow: hidden;
+    background: #111522;
+    border: 1px solid #202638;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.tarjetaequipo:hover {
+    transform: translateY(-7px);
+    border-color: #e63946;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(230, 57, 70, 0.08);
+}
+
+.imagenequipo {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle, rgba(230, 57, 70, 0.22), transparent 65%),
+        #171b2a;
+}
+
+.imagenequipo img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.55));
+    transition: 0.5s;
+}
+
+.tarjetaequipo:hover .imagenequipo img {
+    transform: scale(1.1) translateY(-6px);
+}
+
+.numeroequipo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.informacionequipo {
+    padding: 30px 25px;
+}
+
+.rolequipo {
+    color: #e63946;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.informacionequipo h3 {
+    margin-top: 12px;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.lineaequipo {
+    width: 35px;
+    height: 2px;
+    margin: 15px 0;
+    background: #e63946;
+}
+
+.informacionequipo p {
+    color: #737b90;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.modalpokemon {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(3, 4, 9, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    z-index: 9999;
+}
+
+.modalpokemon.activo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.contenidomodal {
+    position: relative;
+    width: min(900px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 40px;
+    background:
+        linear-gradient(
+            145deg,
+            #111522,
+            #0b0e17
+        );
+    border: 1px solid #30374a;
+    border-radius: 12px;
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.7),
+        0 0 50px rgba(230, 57, 70, 0.08);
+    transform: translateY(30px) scale(0.97);
+    transition: transform 0.35s ease;
+}
+
+.modalpokemon.activo .contenidomodal {
+    transform: translateY(0) scale(1);
+}
+
+.contenidomodal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contenidomodal::-webkit-scrollbar-track {
+    background: #080a12;
+}
+
+.contenidomodal::-webkit-scrollbar-thumb {
+    background: #343b4d;
+    border-radius: 10px;
+}
+
+.contenidomodal::-webkit-scrollbar-thumb:hover {
+    background: #e63946;
+}
+
+.cerrarmodal {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #30374a;
+    border-radius: 6px;
+    background: #171b28;
+    color: #858ca0;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cerrarmodal:hover {
+    background: #e63946;
+    border-color: #e63946;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.encabezadomodal {
+    padding-right: 55px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #202638;
+}
+
+.encabezadomodal span {
+    color: #e63946;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.encabezadomodal h2 {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: clamp(30px, 5vw, 48px);
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.listamodal {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.elementomodal {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-height: 120px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid #202638;
+    border-radius: 8px;
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.elementomodal:hover {
+    background: rgba(230, 57, 70, 0.05);
+    border-color: rgba(230, 57, 70, 0.35);
+    transform: translateX(5px);
+}
+
+.elementomodal img {
+    width: 110px;
+    height: 90px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 6px;
+    background:
+        radial-gradient(
+            circle,
+            rgba(230, 57, 70, 0.12),
+            transparent 70%
+        );
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.elementomodal:hover img {
+    transform: scale(1.08);
+}
+
+.elementomodal div {
+    flex: 1;
+}
+
+.elementomodal h3 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+.elementomodal p {
+    color: #737b90;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+body.modalabierto {
+    overflow: hidden;
+}
+
+.estrategia {
+    border-top: 1px solid #1b2030;
+}
+
+.tablaestrategia {
+    position: relative;
+}
+
+.tablaestrategia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 42px;
+    width: 1px;
+    background: #252b3b;
+}
+
+.filaestrategia {
+    position: relative;
+    display: grid;
+    grid-template-columns: 85px 1fr 120px;
+    align-items: center;
+    min-height: 150px;
+    padding: 25px 30px 25px 0;
+    border-bottom: 1px solid #1b2030;
+    transition: 0.3s;
+}
+
+.filaestrategia:hover {
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.numeropaso {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #30374a;
+    border-radius: 50%;
+    background: #080a12;
+    color: #ffcc33;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.contenidopaso span {
+    color: #e63946;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.contenidopaso h3 {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.contenidopaso p {
+    max-width: 700px;
+    color: #6e768a;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.estadopaso {
+    justify-self: end;
+    padding: 7px 10px;
+    border: 1px solid #2a3040;
+    color: #737b90;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.estadopaso.exito {
+    color: #43d17b;
+    border-color: rgba(67, 209, 123, 0.3);
+    background: rgba(67, 209, 123, 0.06);
+}
+
+.filaestrategia.final {
+    border-bottom: none;
+}
+
+.seccionimportancia {
+    margin-top: 60px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #202638;
+    border-radius: 10px;
+}
+
+.seccionimportancia h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.seccionimportancia ul {
+    padding-left: 20px;
+}
+
+.seccionimportancia li {
+    margin-bottom: 10px;
+    color: #737b90;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.seccionimportancia strong {
+    color: #ffcc33;
+}
+
+footer {
+    padding: 50px 20px;
+    background: #06070d;
+    border-top: 1px solid #181d2a;
+    text-align: center;
+}
+
+.logotipopie {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    color: #555d70;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #ffcc33;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .rejillaequipos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .portadaguia {
+        min-height: 520px;
+        background-position: center;
+    }
+
+    .contenidoportada {
+        padding: 60px 20px;
+    }
+
+    .portadaguia h1 {
+        font-size: 70px;
+        letter-spacing: -5px;
+    }
+
+    .subtituloportada {
+        font-size: 13px;
+    }
+
+    .introduccion,
+    .equipos,
+    .estrategia {
+        padding: 75px 20px;
+    }
+
+    .encabezadoseccion {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarjetaequipo {
+        grid-template-columns: 1fr;
+    }
+
+    .imagenequipo {
+        min-height: 280px;
+    }
+
+    .informacionequipo {
+        padding: 25px;
+    }
+
+    .tablaestrategia::before {
+        left: 21px;
+    }
+
+    .filaestrategia {
+        grid-template-columns: 55px 1fr;
+        padding-right: 0;
+        gap: 5px;
+    }
+
+    .estadopaso {
+        display: none;
+    }
+
+    .contenidopaso h3 {
+        font-size: 16px;
+    }
+
+    .contenidopaso p {
+        font-size: 11px;
+    }
+
+    .modalpokemon {
+        padding: 12px;
+    }
+
+    .contenidomodal {
+        width: 100%;
+        max-height: 94vh;
+        padding: 25px 18px;
+        border-radius: 10px;
+    }
+
+    .cerrarmodal {
+        top: 12px;
+        right: 12px;
+        width: 38px;
+        height: 38px;
+        font-size: 25px;
+    }
+
+    .encabezadomodal {
+        padding-right: 45px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .encabezadomodal h2 {
+        font-size: 30px;
+    }
+
+    .listamodal {
+        gap: 10px;
+    }
+
+    .elementomodal {
+        align-items: flex-start;
+        gap: 14px;
+        min-height: auto;
+        padding: 12px;
+    }
+
+    .elementomodal img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .elementomodal h3 {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .elementomodal p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .seccionimportancia {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portadaguia h1 {
+        font-size: 58px;
+        letter-spacing: -4px;
+    }
+
+    .tiposportada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementomodal {
+        gap: 10px;
+    }
+
+    .elementomodal img {
+        width: 65px;
+        height: 65px;
+    }
+}

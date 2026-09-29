@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéRaid | Guía Meloetta</title>
+    <link rel="stylesheet" href="../CSS/meloetta.css">
+    <link rel="icon" type="image/png" href="../IMG/logo.jpg">
+</head>
+<body>
+
+<header class="portadaguia">
+    <div class="capaportada"></div>
+    <div class="contenidoportada">
+        <a href="/Index.html" class="botonvolver">← VOLVER A GUÍAS</a>
+        <div class="insigniaportada">GUÍA #02 · LEGENDARIO</div>
+        <h1>MELOETTA</h1>
+        <p class="subtituloportada">Estrategia Starfall optimizada · guía completa</p>
+
+        <div class="tiposportada">
+            <span class="tiponormal">⚪ NORMAL</span>
+            <span class="tipopsiquico">🧠 PSÍQUICO</span>
+        </div>
+    </div>
+    <div class="decoracionportada"></div>
+</header>
+
+<main>
+
+<section class="introduccion">
+    <div class="tituloseccion">
+        <span>ANÁLISIS DEL COMBATE</span>
+        <h2>Cómo derrotar a <strong>Meloetta</strong></h2>
+    </div>
+    <p class="textointroduccion">
+        Esta guía reproduce la estrategia de la documentación de la Raid de Meloetta:
+        cuatro jugadores con equipos preparados específicamente para manipular la IA,
+        controlar la velocidad de los Slowbro y ejecutar una secuencia exacta de turnos.
+        La estrategia utiliza Conjuro, Velo Sagrado, Más Psique, Gravedad, Espacio Raro
+        y ataques coordinados para llevar a Meloetta hasta su derrota.
+    </p>
+</section>
+
+<section class="equipos">
+    <div class="encabezadoseccion">
+        <div>
+            <span>SELECCIÓN DE EQUIPO</span>
+            <h2>Los 4 <strong>Jugadores</strong></h2>
+        </div>
+        <div class="numeroseccion">01 / 02</div>
+    </div>
+
+    <div class="rejillaequipos">
+
+        <article class="tarjetaequipo" onclick="abrirmodal('modaljugador1')">
+            <div class="imagenequipo">
+                <span class="numeroequipo">01</span>
+                <img src="../IMG/trainer1.jpeg" alt="Jugador 01">
+            </div>
+            <div class="informacionequipo">
+                <span class="rolequipo">PRIMER JUGADOR</span>
+                <h3>P:01</h3>
+                <div class="lineaequipo"></div>
+                <p>Inicia la secuencia con Raichu, mantiene el control del objetivo y participa en la preparación del cambio de forma de Meloetta.</p>
+            </div>
+        </article>
+
+        <article class="tarjetaequipo" onclick="abrirmodal('modaljugador2')">
+            <div class="imagenequipo">
+                <span class="numeroequipo">02</span>
+                <img src="../IMG/trainer2.jpeg" alt="Jugador 02">
+            </div>
+            <div class="informacionequipo">
+                <span class="rolequipo">SEGUNDO JUGADOR</span>
+                <h3>P:02</h3>
+                <div class="lineaequipo"></div>
+                <p>Manipula la IA mediante Truco, controla la velocidad del Slowbro y aporta daño y apoyo en la secuencia.</p>
+            </div>
+        </article>
+
+        <article class="tarjetaequipo" onclick="abrirmodal('modaljugador3')">
+            <div class="imagenequipo">
+                <span class="numeroequipo">03</span>
+                <img src="../IMG/trainer3.jpeg" alt="Jugador 03">
+            </div>
+            <div class="informacionequipo">
+                <span class="rolequipo">TERCER JUGADOR</span>
+                <h3>P:03</h3>
+                <div class="lineaequipo"></div>
+                <p>Controla parte de la velocidad de la estrategia, utiliza Scolipede y Volcarona y prepara Espacio Raro.</p>
+            </div>
+        </article>
+
+        <article class="tarjetaequipo" onclick="abrirmodal('modaljugador4')">
+            <div class="imagenequipo">
+                <span class="numeroequipo">04</span>
+                <img src="../IMG/trainer4.jpeg" alt="Jugador 04">
+            </div>
+            <div class="informacionequipo">
+                <span class="rolequipo">CUARTO JUGADOR</span>
+                <h3>P:04</h3>
+                <div class="lineaequipo"></div>
+                <p>Usa Jirachi y su Slowbro para controlar la IA de Meloetta y completar la fase final de la estrategia.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="estrategia">
+    <div class="encabezadoseccion">
+        <div>
+            <span>PLAN DE BATALLA</span>
+            <h2>Estrategia <strong>turno por turno</strong></h2>
+        </div>
+        <div class="numeroseccion">02 / 02</div>
+    </div>
+
+    <div class="tablaestrategia">
+
+        <div class="filaestrategia">
+            <div class="numeropaso">01</div>
+            <div class="contenidopaso">
+                <h3>TURNO 1</h3>
+                <p>
+                    Jugador 1 // Conjuro - RAICHU<br>
+                    Jugador 2 // Truco / Chimecho - MR. MIME<br>
+                    Jugador 3 // Lanzamiento - KROOKODILE<br>
+                    Jugador 4 // Gravedad - JIRACHI
+                </p>
+            </div>
+            <div class="estadopaso exito">96.4%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">02</div>
+            <div class="contenidopaso">
+                <h3>TURNO 2</h3>
+                <p>
+                    Jugador 1 // Megacuerno - HERACROSS<br>
+                    Jugador 2 // Buena Baza - KROOKODILE<br>
+                    Jugador 3 // Megacuerno - SCOLIPEDE<br>
+                    Jugador 4 // Velo Sagrado - JIRACHI
+                </p>
+            </div>
+            <div class="estadopaso exito">84.4%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">03</div>
+            <div class="contenidopaso">
+                <h3>TURNO 3</h3>
+                <p>
+                    Jugador 1 // Alarido - SUICUNE<br>
+                    Jugador 2 // Alarido - ARCANINE<br>
+                    Jugador 3 // Zumbido - VOLCARONA<br>
+                    Jugador 4 // Eco Metálico - JIRACHI
+                </p>
+            </div>
+            <div class="estadopaso exito">76.2%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">04</div>
+            <div class="contenidopaso">
+                <h3>TURNO 4</h3>
+                <p>
+                    Jugador 1 // Último Lugar - SUICUNE<br>
+                    Jugador 2 // Megacuerno - ESCAVALIER<br>
+                    Jugador 3 // Zumbido - VOLCARONA<br>
+                    Jugador 4 // Buena Baza - HONCHKROW
+                </p>
+            </div>
+            <div class="estadopaso exito">65.5%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">05</div>
+            <div class="contenidopaso">
+                <h3>TURNO 5</h3>
+                <p>
+                    Jugador 1 // Lanzamiento - CRAWDAUNT<br>
+                    Jugador 2 // Picadura - DUSCLOPS<br>
+                    Jugador 3 // Lanzamiento - CRAWDAUNT<br>
+                    Jugador 4 // Megacuerno - ESCAVALIER
+                </p>
+            </div>
+            <div class="estadopaso exito">49.9%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">06</div>
+            <div class="contenidopaso">
+                <h3>TURNO 6</h3>
+                <p>
+                    Jugador 1 // Más Psique - SLOWBRO (sobre Meloetta)<br>
+                    Jugador 2 // Lanzamiento - DUSCLOPS (sobre Meloetta)<br>
+                    Jugador 3 // Reflejo - REUNICLUS<br>
+                    Jugador 4 // Conjuro - MUSHARNA
+                </p>
+            </div>
+            <div class="estadopaso exito">44.5%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">07</div>
+            <div class="contenidopaso">
+                <h3>TURNO 7</h3>
+                <p>
+                    Jugador 1 // Psíquico - SLOWBRO<br>
+                    Jugador 2 // Más Psique - SLOWBRO (sobre Meloetta)<br>
+                    Jugador 3 // Velo Sagrado - REUNICLUS<br>
+                    Jugador 4 // Gravedad - MUSHARNA
+                </p>
+            </div>
+            <div class="estadopaso exito">38.8%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">08</div>
+            <div class="contenidopaso">
+                <h3>TURNO 8</h3>
+                <p>
+                    Jugador 1 // Psíquico - SLOWBRO<br>
+                    Jugador 2 // Onda Certera - SLOWBRO<br>
+                    Jugador 3 // Espacio Raro - SLOWBRO<br>
+                    Jugador 4 // Encanto - REUNICLUS
+                </p>
+            </div>
+            <div class="estadopaso exito">26.2%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">09</div>
+            <div class="contenidopaso">
+                <h3>TURNO 9</h3>
+                <p>
+                    Jugador 1 // Defensa Férrea - SLOWBRO<br>
+                    Jugador 2 // Onda Certera - SLOWBRO<br>
+                    Jugador 3 // Más Psique - SLOWBRO (sobre PJ2)<br>
+                    Jugador 4 // Más Psique - SLOWBRO (sobre PJ3)
+                </p>
+            </div>
+            <div class="estadopaso exito">22.2%</div>
+        </div>
+
+        <div class="filaestrategia">
+            <div class="numeropaso">10</div>
+            <div class="contenidopaso">
+                <h3>TURNO 10</h3>
+                <p>
+                    Jugador 1 // Relajo - SLOWBRO<br>
+                    Jugador 2 // Más Psique - SLOWBRO (sobre cualquiera)<br>
+                    Jugador 3 // Psíquico - SLOWBRO<br>
+                    Jugador 4 // Onda Certera - SLOWBRO
+                </p>
+            </div>
+            <div class="estadopaso exito">11.9%</div>
+        </div>
+
+        <div class="filaestrategia final">
+            <div class="numeropaso">11</div>
+            <div class="contenidopaso">
+                <h3>TURNO 11</h3>
+                <p>
+                    Jugador 1 // A Bocajarro - CONKELDURR<br>
+                    Jugador 2 // Psíquico - SLOWBRO<br>
+                    Jugador 3 // Onda Certera - SLOWBRO<br>
+                    Jugador 4 // Psíquico - SLOWBRO
+                </p>
+            </div>
+            <div class="estadopaso exito">FIN</div>
+        </div>
+
+    </div>
+
+    <div class="seccionimportancia">
+        <h2>DATOS DE IMPORTANCIA</h2>
+        <ul>
+            <li>Si Meloetta está a +4 y los Slowbro tienen menos de 25 de Ataque Especial, esta información sirve para decidir si conviene arriesgarse.</li>
+            <li>Reiniciar si Meloetta prioriza a Jirachi en lugar de Raichu.</li>
+            <li>Reiniciar si Chimecho confunde a Krookodile y Krookodile se golpea a sí mismo.</li>
+            <li>Reiniciar si Meloetta no derrota a Jirachi después de 2 Rayo Carga.</li>
+            <li>Reiniciar si Escavalier muere.</li>
+            <li>Reiniciar si Meloetta no cambia de forma con al menos +4 en Ataque Especial.</li>
+            <li>El Slowbro del PJ2 debe ser más lento que el Slowbro del PJ1.</li>
+            <li>Reuniclus debe ser más lento que los Slowbro de PJ1 y PJ2.</li>
+            <li>Meloetta debería priorizar al Slowbro del PJ4.</li>
+            <li>En el último tramo, Meloetta se enfurece con el PJ1, dejando libre al PJ4.</li>
+        </ul>
+    </div>
+
+    <div class="seccionimportancia">
+        <h2>VELOCIDADES CLAVE</h2>
+        <ul>
+            <li>Crawdaunt PJ1: <strong>51</strong></li>
+            <li>Crawdaunt PJ2: <strong>52</strong></li>
+            <li>Crawdaunt PJ3: <strong>53</strong></li>
+            <li>Crawdaunt PJ4: <strong>+89</strong>, para superar a Meloetta</li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="logotipopie">⚡SPFC/SPGD⚡</div>
+    <p>DOMINA LAS RAIDS LEGENDARIAS</p>
+    <a href="/Index.html">← VOLVER A LA PÁGINA PRINCIPAL</a>
+</footer>
+
+<div id="modaljugador1" class="modalpokemon">
+    <div class="contenidomodal">
+        <button class="cerrarmodal" onclick="cerrarmodal('modaljugador1')">×</button>
+        <div class="encabezadomodal">
+            <span><em>EQUIPO</em> PRINCIPAL</span>
+            <h2>PLAYER 01</h2>
+        </div>
+
+        <div class="listamodal">
+
+            <div class="elementomodal">
+                <img src="../IMG/raichu.jpg" alt="RAICHU">
+                <div><h3>RAICHU</h3><p>NIVEL: 100<br>IVS: 31/x/x/x/31/31<br>EVS: 252/x/x/x/140/98<br>NATURALEZA: Serena<br>HABILIDAD: Pararrayos (Hab. Oculta)<br>OBJETO: Baya Magua</p></div>
+                <div><p>MOVE SET:<br>CONJURO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/HERRA.jpeg" alt="HERACROSS">
+                <div><h3>HERACROSS</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/31<br>EVS: x/252/x/x/x/196<br>NATURALEZA: Alegre<br>HABILIDAD: Enjambre<br>OBJETO: Cinta Elegida</p></div>
+                <div><p>MOVE SET:<br>MEGACUERNO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/suicune.jpg" alt="SUICUNE">
+                <div><h3>SUICUNE</h3><p>NIVEL: 100<br>IVS: 31/x/x/x/20/31<br>EVS: 6/x/x/x/x/204<br>NATURALEZA: Miedosa<br>HABILIDAD: Presión<br>OBJETO: Manto Encubierto</p></div>
+                <div><p>MOVE SET:<br>ALARIDO<br>ÚLTIMO LUGAR</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/conkeldurr.jpg" alt="CONKELDURR">
+                <div><h3>CONKELDURR</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/0<br>EVS: x/252/x/x/x/x<br>NATURALEZA: Audaz<br>HABILIDAD: Potencia Bruta<br>OBJETO: Vidaesfera</p></div>
+                <div><p>MOVE SET:<br>A BOCAJARRO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/slowbro.jpg" alt="SLOWBRO">
+                <div><h3>SLOWBRO</h3><p>NIVEL: 100<br>IVS: 31/x/31/+29/20-25/10<br>EVS: 252/x/252/6/x/x<br>NATURALEZA: Plácida<br>HABILIDAD: Despiste<br>OBJETO: Casco Dentado</p></div>
+                <div><p>MOVE SET:<br>MÁS PSIQUE<br>PSÍQUICO<br>DEFENSA FÉRREA<br>RELAJO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/crawdaunt.jpg" alt="CRAWDAUNT">
+                <div><h3>CRAWDAUNT</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/0<br>EVS: x/252/x/x/x/x<br>NATURALEZA: Audaz<br>HABILIDAD: Adaptable (Hab. Oculta)<br>OBJETO: Bola Férrea</p></div>
+                <div><p>MOVE SET:<br>LANZAMIENTO</p></div>
+            </div>
+
+        </div>
+
+        <div class="seccionimportancia">
+            <h2>DATOS DE IMPORTANCIA</h2>
+            <ul>
+                <li><strong>Conjuro:</strong> es obligatorio para Raichu y debe ser movimiento huevo.</li>
+                <li><strong>Defensa Especial:</strong> debe estar entre 20 y 25; Suicune debe tener exactamente 20.</li>
+                <li><strong>Slowbro:</strong> su velocidad debe ser superior a la del Slowbro del PJ2.</li>
+                <li><strong>Despiste:</strong> se utiliza para manipular la IA de Chimecho.</li>
+                <li><strong>Velo Sagrado:</strong> mantiene a Slowbro protegido frente a la confusión durante la parte correspondiente de la estrategia.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modaljugador2" class="modalpokemon">
+    <div class="contenidomodal">
+        <button class="cerrarmodal" onclick="cerrarmodal('modaljugador2')">×</button>
+        <div class="encabezadomodal">
+            <span><em>EQUIPO</em> PRINCIPAL</span>
+            <h2>PLAYER 02</h2>
+        </div>
+
+        <div class="listamodal">
+
+            <div class="elementomodal">
+                <img src="../IMG/mrmime.jpg" alt="MR. MIME">
+                <div><h3>MR. MIME</h3><p>NIVEL: 100<br>IVS: 31/x/x/x/31/31<br>EVS: 106/x/x/x/x/x<br>NATURALEZA: Neutra<br>HABILIDAD: Insonorizar<br>OBJETO: Pañuelo Elegido</p></div>
+                <div><p>MOVE SET:<br>TRUCO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/KROOKODILE.jpg" alt="KROOKODILE">
+                <div><h3>KROOKODILE</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/31<br>EVS: x/252/x/x/x/252<br>NATURALEZA: Firme<br>HABILIDAD: Intimidación<br>OBJETO: Cinta Elegida</p></div>
+                <div><p>MOVE SET:<br>BUENA BAZA</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/entei.jpg" alt="ENTEI">
+                <div><h3>ENTEI</h3><p>NIVEL: 100<br>IVS: 31/x/x/x/15/31<br>EVS: x/x/x/x/x/176<br>NATURALEZA: Afable<br>HABILIDAD: Presión<br>OBJETO: Baya Magua</p></div>
+                <div><p>MOVE SET:<br>ALARIDO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/escavalier.jpg" alt="ESCAVALIER">
+                <div><h3>ESCAVALIER</h3><p>NIVEL: 100<br>IVS: x/31/x/x/15/0<br>EVS: x/252/x/x/200/52<br>NATURALEZA: Audaz<br>HABILIDAD: Enjambre<br>OBJETO: Banda Focus</p></div>
+                <div><p>MOVE SET:<br>MEGACUERNO<br>PICADURA</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/dusclops.jpg" alt="DUSCLOPS">
+                <div><h3>DUSCLOPS</h3><p>NIVEL: 100<br>IVS: 31/x/0/x/x/x<br>EVS: 44/x/112/x/x/x<br>NATURALEZA: Neutra<br>HABILIDAD: Presión<br>OBJETO: Llamaesfera</p></div>
+                <div><p>MOVE SET:<br>LANZAMIENTO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/slowbro.jpg" alt="SLOWBRO">
+                <div><h3>SLOWBRO</h3><p>NIVEL: 100<br>IVS: 31/x/31/+29/+29/5<br>EVS: 252/x/252/6/x/x<br>NATURALEZA: Plácida<br>HABILIDAD: Despiste<br>OBJETO: Casco Dentado</p></div>
+                <div><p>MOVE SET:<br>MÁS PSIQUE<br>ONDA CERTERA<br>PSÍQUICO<br>SALMUERA</p></div>
+            </div>
+
+        </div>
+
+        <div class="seccionimportancia">
+            <h2>DATOS DE IMPORTANCIA</h2>
+            <ul>
+                <li>El Slowbro del PJ2 debe ser obligatoriamente el más lento de los 4 Slowbro.</li>
+                <li>Su Defensa Especial requiere 29 o más.</li>
+                <li>Dusclops puede usar cualquier naturaleza que no aumente Defensa.</li>
+                <li>Los EVs de PS de Mr. Mime pueden no ser indispensables.</li>
+                <li>Como alternativas psíquicas se mencionan Kadabra, Gothitelle, Alakazam o Gardevoir.</li>
+                <li>Arcanine aparece como reemplazo de Entei. Si se usa Arcanine, el objeto que se debe intercambiar es obligatoriamente el Pañuelo Elegido; cambiar otro objeto altera el comportamiento de la IA.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modaljugador3" class="modalpokemon">
+    <div class="contenidomodal">
+        <button class="cerrarmodal" onclick="cerrarmodal('modaljugador3')">×</button>
+        <div class="encabezadomodal">
+            <span><em>EQUIPO</em> PRINCIPAL</span>
+            <h2>PLAYER 03</h2>
+        </div>
+
+        <div class="listamodal">
+
+            <div class="elementomodal">
+                <img src="../IMG/KROOKODILE.jpg" alt="KROOKODILE">
+                <div><h3>KROOKODILE</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/31<br>EVS: x/252/x/x/x/252<br>NATURALEZA: Firme<br>HABILIDAD: Intimidación<br>OBJETO: Flecha Veneno</p></div>
+                <div><p>MOVE SET:<br>LANZAMIENTO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/scolipede.jpg" alt="SCOLIPEDE">
+                <div><h3>SCOLIPEDE</h3><p>NIVEL: 100<br>IVS: 20-25/31/x/x/20-25/31<br>EVS: 80/252/x/x/80/96<br>NATURALEZA: Firme<br>HABILIDAD: Punto Tóxico<br>OBJETO: Cinta Elegida</p></div>
+                <div><p>MOVE SET:<br>MEGACUERNO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/volcarona.jpg" alt="VOLCARONA">
+                <div><h3>VOLCARONA</h3><p>NIVEL: 100<br>IVS: 31/x/x/31/+29/31<br>EVS: x/x/x/252/70/182<br>NATURALEZA: Modesta<br>HABILIDAD: Cuerpo Llama<br>OBJETO: Gafas Elegidas</p></div>
+                <div><p>MOVE SET:<br>ZUMBIDO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/crawdaunt.jpg" alt="CRAWDAUNT">
+                <div><h3>CRAWDAUNT</h3><p>NIVEL: 100<br>IVS: x/31/x/x/x/0-16<br>EVS: x/252/x/x/x/32<br>NATURALEZA: Audaz<br>HABILIDAD: Adaptable (Hab. Oculta)<br>OBJETO: Bola Férrea</p></div>
+                <div><p>MOVE SET:<br>LANZAMIENTO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/reunicus.jpg" alt="REUNICLUS">
+                <div><h3>REUNICLUS</h3><p>NIVEL: 100<br>IVS: 31/x/31/x/31/0<br>EVS: 252/x/192/x/46/x<br>NATURALEZA: Plácida<br>HABILIDAD: Muro Mágico<br>OBJETO: Casco Dentado</p></div>
+                <div><p>MOVE SET:<br>REFLEJO<br>VELO SAGRADO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/slowbro.jpg" alt="SLOWBRO">
+                <div><h3>SLOWBRO</h3><p>NIVEL: 100<br>IVS: 31/x/31/+29/20-25/15<br>EVS: 252/x/252/6/x/x<br>NATURALEZA: Plácida<br>HABILIDAD: Despiste<br>OBJETO: Baya Drasi</p></div>
+                <div><p>MOVE SET:<br>ESPACIO RARO<br>MÁS PSIQUE<br>ONDA CERTERA<br>PSÍQUICO</p></div>
+            </div>
+
+        </div>
+
+        <div class="seccionimportancia">
+            <h2>DATOS DE IMPORTANCIA</h2>
+            <ul>
+                <li>Los IVs indicados para los Pokémon relevantes deben ser de 20 o más cuando la guía así lo especifica.</li>
+                <li>La Defensa Especial del Slowbro debe mantenerse entre 20 y 25.</li>
+                <li>El Slowbro PJ3 debe ser más rápido que el Slowbro PJ2 y más lento que el Slowbro PJ4.</li>
+                <li>Con +4 en IVs de la estadística correspondiente, el Slowbro queda por encima del Crawdaunt PJ1 y Escavalier PJ2 sin EVs.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modaljugador4" class="modalpokemon">
+    <div class="contenidomodal">
+        <button class="cerrarmodal" onclick="cerrarmodal('modaljugador4')">×</button>
+        <div class="encabezadomodal">
+            <span><em>EQUIPO</em> PRINCIPAL</span>
+            <h2>PLAYER 04</h2>
+        </div>
+
+        <div class="listamodal">
+
+            <div class="elementomodal">
+                <img src="../IMG/jirachi.jpg" alt="JIRACHI">
+                <div><h3>JIRACHI</h3><p>NIVEL: 100<br>IVS: 31/x/x/x/31/31<br>EVS: 42/x/x/x/110/196<br>NATURALEZA: Cauta<br>HABILIDAD: Dicha<br>OBJETO: Manto Encubierto</p></div>
+                <div><p>MOVE SET:<br>GRAVEDAD<br>VELO SAGRADO<br>ECO METÁLICO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/honch.jpg" alt="HONCHKROW">
+                <div><h3>HONCHKROW</h3><p>NIVEL: 100<br>IVS: +29/31/31/x/+29/31<br>EVS: x/252/x/x/44/212<br>NATURALEZA: Firme<br>HABILIDAD: Afortunado<br>OBJETO: Vidaesfera</p></div>
+                <div><p>MOVE SET:<br>BUENA BAZA</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/musharna.jpg" alt="MUSHARNA">
+                <div><h3>MUSHARNA</h3><p>NIVEL: 100<br>IVS: 31/x/31/x/31/0<br>EVS: 252/x/252/x/x/x<br>NATURALEZA: Osada<br>HABILIDAD: Sincronia<br>OBJETO: Baya Jaboca</p></div>
+                <div><p>MOVE SET:<br>CONJURO<br>GRAVEDAD</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/escavalier.jpg" alt="ESCAVALIER">
+                <div><h3>ESCAVALIER</h3><p>NIVEL: 100<br>IVS: 15/31/x/x/15/0<br>EVS: x/252/x/x/x/216<br>NATURALEZA: Audaz<br>HABILIDAD: Enjambre<br>OBJETO: Banda Focus</p></div>
+                <div><p>MOVE SET:<br>MEGACUERNO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/reunicus.jpg" alt="REUNICLUS">
+                <div><h3>REUNICLUS</h3><p>NIVEL: 100<br>IVS: 31/x/31/x/31/0<br>EVS: 252/x/252/x/x/x<br>NATURALEZA: Plácida<br>HABILIDAD: Funda<br>OBJETO: Casco Dentado</p></div>
+                <div><p>MOVE SET:<br>ENCANTO</p></div>
+            </div>
+
+            <div class="elementomodal">
+                <img src="../IMG/slowbro.jpg" alt="SLOWBRO">
+                <div><h3>SLOWBRO</h3><p>NIVEL: 100<br>IVS: 31/x/31/+29/31/20<br>EVS: 242/x/252/x/16/x<br>NATURALEZA: Plácida<br>HABILIDAD: Despiste<br>OBJETO: Baya Pabaya</p></div>
+                <div><p>MOVE SET:<br>MÁS PSIQUE<br>PSÍQUICO<br>ONDA CERTERA<br>SALMUERA</p></div>
+            </div>
+
+        </div>
+
+        <div class="seccionimportancia">
+            <h2>DATOS DE IMPORTANCIA</h2>
+            <ul>
+                <li>Reuniclus debe tener obligatoriamente 0 IVs en Velocidad y ser el más lento.</li>
+                <li>Musharna no necesita 0 IVs en Velocidad.</li>
+                <li>El Slowbro PJ4 requiere 31 IVs en Defensa Especial para que Exploud nunca lo ataque.</li>
+                <li>El Slowbro PJ4 no necesita exactamente 20 en Velocidad.</li>
+                <li>Jirachi debe llevar exactamente los EVs indicados: 42 PS, 110 Defensa Especial y 196 Velocidad.</li>
+                <li>Escavalier puede ser Firme; debe ser más rápido que Meloetta durante Espacio Raro. La guía indica Velocidad 88 y el ajuste mostrado como +89.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function abrirmodal(idmodal) {
+    const modal = document.getElementById(idmodal);
+
+    if (!modal) {
+        console.error("No existe el modal: " + idmodal);
+        return;
+    }
+
+    document.querySelectorAll(".modalpokemon.activo").forEach(function(modalactivo) {
+        modalactivo.classList.remove("activo");
+    });
+
+    modal.classList.add("activo");
+    document.body.classList.add("modalabierto");
+}
+
+function cerrarmodal(idmodal) {
+    const modal = document.getElementById(idmodal);
+
+    if (!modal) {
+        console.error("No existe el modal: " + idmodal);
+        return;
+    }
+
+    modal.classList.remove("activo");
+
+    if (!document.querySelector(".modalpokemon.activo")) {
+        document.body.classList.remove("modalabierto");
+    }
+}
+
+document.querySelectorAll(".modalpokemon").forEach(function(modal) {
+    modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            cerrarmodal(modal.id);
+        }
+    });
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        document.querySelectorAll(".modalpokemon.activo").forEach(function(modal) {
+            cerrarmodal(modal.id);
+        });
+    }
+});
+</script>
+
+</body>
+</html>
